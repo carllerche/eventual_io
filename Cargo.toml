@@ -1,0 +1,24 @@
+[package]
+
+name          = "eventual_io"
+version       = "0.0.1"
+license       = "MIT"
+authors       = ["Carl Lerche <me@carllerche.com>"]
+description   = "Asynchronous IO built around futures & streams"
+homepage      = "https://github.com/carllerche/eventual-io"
+repository    = "https://github.com/carllerche/eventual-io"
+readme        = "README.md"
+
+[dependencies]
+log      = "0.3.0"
+mio      = "0.3.0"
+bytes    = "0.2.0"
+eventual = "0.1.0"
+
+[dev-dependencies]
+env_logger = "0.3.0"
+
+[[test]]
+
+name = "test"
+path = "test/test.rs"
