@@ -9,3 +9,5 @@ An async IO library built with
 This should mostly work as is, but error handling is not as robust as it
 should be. Also, this should be integrated with a thread pool for
 execution and not execute callbacks on the event loop.
+
+See the example [TCP proxy](examples/proxy.rs).
