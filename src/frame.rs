@@ -105,7 +105,7 @@ fn frame_one<F>(src: Stream<Bytes>,
     });
 }
 
-pub trait Framer : Send {
+pub trait Framer : Send + 'static {
     /// Buffer more data into the framer
     fn buffer(&mut self, bytes: Bytes);
 

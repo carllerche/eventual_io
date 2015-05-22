@@ -19,7 +19,7 @@ pub fn main() {
     reactor.accept(srv)
         // Process client connections with at most 10 in-flight at any given
         // time.
-        .process(10, |(src_tx, src_rx)| {
+        .process(10, move |(src_tx, src_rx)| {
             println!(" + Handling socket");
 
             // Hard coded to a google IP
