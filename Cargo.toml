@@ -13,7 +13,7 @@ readme        = "README.md"
 log      = "0.3.0"
 mio      = "0.3.0"
 bytes    = "0.2.0"
-eventual = "0.1.0"
+eventual = "0.1.2"
 
 [dev-dependencies]
 env_logger = "0.3.0"
