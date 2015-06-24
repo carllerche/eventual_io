@@ -32,9 +32,9 @@ impl Frame for Stream<Bytes> {
     }
 }
 
-fn frame<F>(src: Stream<Bytes>,
-            dst: Sender<Bytes>,
-            mut framer: F)
+pub fn frame<F>(src: Stream<Bytes>,
+                dst: Sender<Bytes>,
+                mut framer: F)
         where F: Framer {
 
     match framer.next() {
@@ -68,9 +68,9 @@ fn frame<F>(src: Stream<Bytes>,
     }
 }
 
-fn frame_one<F>(src: Stream<Bytes>,
-                dst: Complete<Option<(Bytes, Stream<Bytes>)>>,
-                mut framer: F)
+pub fn frame_one<F>(src: Stream<Bytes>,
+                    dst: Complete<Option<(Bytes, Stream<Bytes>)>>,
+                    mut framer: F)
         where F: Framer {
 
     src.receive(move |res| {
