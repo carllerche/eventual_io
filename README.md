@@ -1,3 +1,7 @@
+# This crate is deprecated!
+
+This crate is deprecated in favor of [Tokio](https://github.com/tokio-rs/tokio).
+
 # Eventual IO
 
 An async IO library built with
